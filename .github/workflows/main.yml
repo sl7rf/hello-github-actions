@@ -28,7 +28,7 @@ jobs:
           load: true
           tags: myimage:latest
           builder: ${{ steps.buildx.outputs.name }}
-          file: ./.github/actions/actiona-a/Dockerfile
+          file: ./action-a/Dockerfile
           context: .
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
